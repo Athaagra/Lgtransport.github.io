@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <!-- Required meta tags --->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ </head>
+<body>
+
+<div class="swiper-container">
+  <!--- Additional-wrapper--->
+  <div class="swiper-wrapper">
+      <!-- Slides --->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+  </div>
+<!-- if we need pagination -->
+  <div class="swiper-pagination"></div>
+
+   <!-- if we need pagination buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+ <!-- if we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<script href="https://unpkg.com/swiper/js/swiper.js"></script>
+<script href="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+   //Optional parameters
+   //direction: 'vertical',
+   loop: true,
+   // If we need pagination 
+   pagination: {
+     el: '.swiper-pagination',
+   },
+   // And if we need scrollbar 
+   scrollbar:  {
+      el: '.swiper-scrollbar',
+   },
+
+})
+</script>
+</body>
+</html>
