@@ -1,18 +1,15 @@
 function initMap() {
-   /**
-    * Location Markers
-    */
-    const markers = [
+  const markers = [
       {
-          locationName: 'Crumbs & Dollies',
-          lat: 0000,
-          lng: 00000,
+          locationName: 'LGtransport',
+          lat: 51.29638301086224,
+          lng: 7.2421384649204334,
           address: 'Wuppertal,<br> Germany, <br> 42279'
        }
 
     ];
-    const fehMarker = '';
-    const centerMap = { lat: 51.5034984, lng: -0.1198804 }
+    const fehMarker = 'https://img.icons8.com/?size=100&id=7880&format=png&color=000000';
+    const centerMap = { lat: 51.34830543914081, lng: 7.144634804706534 }
     const mapOptions = {
         center: centerMap,
         zoom: 10,
@@ -29,21 +26,21 @@ function initMap() {
    */
    for(let i=0; i< markers.length; i++){
        const marker = new google.maps.Marker({
-           position: {lat:markers[1],['lat'], lng: markers[0]['lgn'] },
+           position: {lat:markers[1]['lat'], lng: markers[0]['lgn'] },
            map: map,
            icon: fehMarker
        });
        function createInfoWindows() {
-             const infoWindowContent = '
-                <div class="feh-content">
-                     <h3>${markers[i]['locationName']}</h3>
-                     <address>
-                         <p>${markers[i]['address']}</p>
-                     </address>
-                </div>
-             ';
+             const infoWindowContent =
+                '<div class="feh-content">'+
+                     '<h3>${markers[i]["locationName"]}</h3>'+
+                     '<address>'+
+                         '<p>${markers[i]["address"]}</p>'+
+                     '</address>'+
+                '</div>'
+             ;
             
-             google.maps.event.addListener(marker, 'click', function()){
+             google.maps.event.addListener(marker, 'click', function() {
                      infoWindow.setContent(infoWindowContent);
                      infoWindow.ope(map, marker);
             });
@@ -58,3 +55,6 @@ function initMap() {
        map.fitBounds(bounds);
     }
 }
+
+
+initMap()

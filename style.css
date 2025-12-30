@@ -246,10 +246,10 @@ h1 {
   text-align: center;
 }
 
-#google-map{
+div#google-map{
   border: 1px solid #ccc;
-  width: 700px;
-  heigth: 500px;
+  width: 500px;
+  height: 300px;
   align-self: center;
   margin: 0 auto;
 }

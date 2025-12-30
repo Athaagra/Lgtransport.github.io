@@ -13,7 +13,8 @@
     <!-- Swiper Css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.0.3/swiper-bundle.min.css" />
     <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">   
-
+    <!---<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY&loading=async&callback=initMap"></script>--->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY&libraries=maps,marker" defer ></script>
     <link rel="stylesheet" href="swippermin.css" />
 
   </head>
@@ -203,7 +204,7 @@
           <div class="box-top">
              <div class="profile"> 
                    <div class="profile-img"> 
-                      <img src="images/c-1.jpg" />
+                      <img src="imagesc-1.jpg" />
                    </div>
                    <div class="name-user">
                         <strong>Touseeq Ijaz</strong>
@@ -231,7 +232,7 @@
           <div class="box-top">
              <div class="profile"> 
                    <div class="profile-img"> 
-                      <img src="images/c-1.jpg" />
+                      <img src="imagesc-1.jpg" />
                    </div>
                    <div class="name-user">
                         <strong>Touseeq Ijaz</strong>
@@ -262,7 +263,7 @@
           <div class="box-top">
              <div class="profile"> 
                    <div class="profile-img"> 
-                      <img src="images/c-1.jpg" />
+                      <img src="imagesc-1.jpg" />
                    </div>
                    <div class="name-user">
                         <strong>Touseeq Ijaz</strong>
@@ -290,7 +291,7 @@
           <div class="box-top">
              <div class="profile"> 
                    <div class="profile-img"> 
-                      <img src="images/c-1.jpg" />
+                      <img src="imagesc-1.jpg" />
                    </div>
                    <div class="name-user">
                         <strong>Touseeq Ijaz</strong>
@@ -325,9 +326,12 @@
 
     <div class="small-6 large-3 columns">
       <p class="lead">Offices</p> 
-        <div id="google-map">
+        <!--<div id="google-map">
     
-        </div>
+        </div>--->
+        <gmp-map center="51.34830543914081,  7.144634804706534" zoom="10" map-id="DEMO_MAP_ID" style="height: 300px; width:500px;"><gmp-advanced-marker
+                position="51.29638301086224, 7.2421384649204334"
+                title="LGtransport, Wuppertal,<br> Germany, <br> 42279"></gmp-advanced-marker></gmp-map>
        </div>
 
     <div class="small-6 large-3 columns">
@@ -384,13 +388,11 @@
     <script src="swippermin.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script src="script.js"></script>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
-<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY&callback=initMap"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="main.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script> 
 <script>
 var mySwiper = new Swiper ('.swiper-container', {
    //Optional parameters
