@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.0.3/swiper-bundle.min.css" />
     <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">   
     <!---<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY&loading=async&callback=initMap"></script>--->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY&libraries=maps,marker" defer ></script>
+    <!---<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY&libraries=maps,marker" defer ></script>--->
     <link rel="stylesheet" href="swippermin.css" />
 
   </head>
@@ -319,20 +319,15 @@
 </div>
 </div>
 
- 
-<footer>
 <footer>
   <div class="row expanded callout secondary">
 
     <div class="small-6 large-3 columns">
       <p class="lead">Offices</p> 
-        <!--<div id="google-map">
+        <div id="google-map">
     
-        </div>--->
-        <gmp-map center="51.34830543914081,  7.144634804706534" zoom="10" map-id="DEMO_MAP_ID" style="height: 300px; width:500px;"><gmp-advanced-marker
-                position="51.29638301086224, 7.2421384649204334"
-                title="LGtransport, Wuppertal,<br> Germany, <br> 42279"></gmp-advanced-marker></gmp-map>
-       </div>
+        </div>
+     </div>
 
     <div class="small-6 large-3 columns">
       <p class="lead">Solar Systems</p>
@@ -390,7 +385,8 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY", v: "weekly"});</script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="main.js"></script> 
 <script>

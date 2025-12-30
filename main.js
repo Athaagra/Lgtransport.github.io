@@ -1,4 +1,4 @@
-function initMap() {
+async function initMap() {
   const markers = [
       {
           locationName: 'LGtransport',
@@ -13,47 +13,46 @@ function initMap() {
     const mapOptions = {
         center: centerMap,
         zoom: 10,
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        mapId: "4504f8b37365c3d0"
     }
+    const { Map } = (await google.maps.importLibrary('maps'));
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     const map = new google.maps.Map(document.getElementById('google-map'),mapOptions);
-    const infoWindow = new google.maps.infoWindow({
+    const infoWindow = new google.maps.InfoWindow({
          minWidth: 200,
          maxWidth: 200
     });
-    const bounds = new google.maps.LatLngBounds();
+   //const bounds = new google.maps.LatLngBounds();
    /**
    * Loop through all markers
    */
+   const contentString =
+    '<div id="content">' +
+    '<p id="firstHeading">LGtransport</p>' +
+    '<div id="bodyContent">' +
+    "<p>Wuppertal,<br> Germany, <br> 42279</p>" +
+    "</div>" +
+    "</div>";
+   const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "Uluru",
+   });
    for(let i=0; i< markers.length; i++){
-       const marker = new google.maps.Marker({
-           position: {lat:markers[1]['lat'], lng: markers[0]['lgn'] },
+       const marker = new AdvancedMarkerElement({
+           position: {lat: markers[0]['lat'], lng: markers[0]['lng'] },
            map: map,
-           icon: fehMarker
-       });
-       function createInfoWindows() {
-             const infoWindowContent =
-                '<div class="feh-content">'+
-                     '<h3>${markers[i]["locationName"]}</h3>'+
-                     '<address>'+
-                         '<p>${markers[i]["address"]}</p>'+
-                     '</address>'+
-                '</div>'
-             ;
-            
-             google.maps.event.addListener(marker, 'click', function() {
-                     infoWindow.setContent(infoWindowContent);
-                     infoWindow.ope(map, marker);
-            });
-       }
-       createInfoWindows();
-       
-       infoWindow.addListener('closeclick', function (){
-           map.fitBounds(bounds);
-       });
-       
-       bounds.extend(new google.maps.LatLng(markers[i]['lat'], markers[i]['lng']));
-       map.fitBounds(bounds);
-    }
+           title: "LGtransport",
+    });
+   console.log('This is marker',marker.position.uD);
+
+   marker.addListener("click", () => {
+    infowindow.open({
+      anchor: marker,
+      map,
+    })
+})
+}
 }
 
 
