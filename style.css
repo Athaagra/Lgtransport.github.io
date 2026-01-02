@@ -308,7 +308,7 @@ i.fi-social-tumblr {
    width: 55%;
    height: 44%;  
    background-color: rgba(255, 99, 71, 255);
-   left: 800px;
+   left: 40%;
    margin-top:-12%;
    border-top: 5px solid coral;
    
@@ -422,6 +422,7 @@ i.fi-social-tumblr {
   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
   color: #333;
   text-align: center;
+  margin-top: 6%;
 }
 
 .service .heading {
@@ -482,13 +483,33 @@ i.fi-social-tumblr {
 @media screen and (max-width: 992px){
    .service {
       padding: 20px 5%;
+      margin-top:40%;
   }
+   .top-div{
+      padding-bottom: 50%; 
+  }
+   
 }
 
 @media screen and (max-width: 350px){
    .service .wrapper {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+  .top-div{
+      padding-bottom: 60%; 
+  }
+
+}
+
+
+@media screen and (max-width: 240px){
+   .service .wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .top-div{
+      padding-bottom: 65%; 
+  }
+
 }
 
 media (max-width: 750px){
@@ -503,4 +524,7 @@ media (max-width: 750px){
    .nav-btn{
        display:none;
     }
+   .top-div{
+      padding-bottom: 50%; 
+  }
 }
