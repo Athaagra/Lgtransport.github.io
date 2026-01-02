@@ -3,6 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+        <meta name="author" content="Athanasios Agrafiotis">
+        <meta name="description" content= "Portfolio of Agrafiotis Athanasios 27-years-old, Kozani-based, Greek Freelance designer/developer.Graduate of Computer science and Engineering of TEI thessalia. I love to create websites that are beautifull, interactive, responsive and friendly. My passion is to explore new areas and expanding my skills.">
+        <meta name="keywords" content="web developer,web designer,freelancer,kozani,agrafiotis,greek,websites,responsive,web,design,html,css,html5,development,developer,javascript,php,photoshop,mysql">
+       <meta property="og:site_name" content="Portfolio of Agrafiotis Athanasios"/>
+       <meta property="og:title" content="Portfolio of Agrafiotis Athanasios"/>
+       <meta property="og:description" content="Portfolio of Agrafiotis Athanasios 27-years-old, Kozani-based, Greek Freelance designer/developer.Graduate of Computer science and Engienering of TEI thessalia. I love to create websites that are beautifull, interactive, responsive and friendly. My passion is to explore new areas and expanding my skills."/> 
+       <meta property="og:image" content="resources/img/logo-black.png">
+       <meta property="og:url" content="http://agrafiotis.com/">
+       <meta property="og:type" content="Portfolio"/>    
+
+
+
+
     <title>LGtransport</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link href="https://fonts.cdnfonts.com/css/questa-sans?styles=17046" rel="stylesheet">         
@@ -17,21 +32,31 @@
     <!---<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY&libraries=maps,marker" defer ></script>--->
     <link rel="stylesheet" href="swippermin.css" />
 
+
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="resources/favicon/manifest.json">
+        <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg">
+        <link rel="shortcut icon" href="resources/favicon/favicon.ico">
+        <meta name="msapplication-config" content="resources/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
   </head>
   <body>
 
 
 <header>
   <!-- Sub Navigation -->
-  <div class="top-bar">
+  <div class="top-bar" id="Home">
        <div class="medium-4 columns">
       <img src="https://placehold.it/450x183&text=LOGO" alt="company logo">
     </div>
     <div class="top-bar-left">
-      <ul class="menu">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
+      <ul class="menu js--main-nav">
+        <li><a href="#work">One</a></li>
+        <li><a href="#projects">Two</a></li>
+        <li><a href="#contact">Three</a></li>
         <li><a href="#">Four</a></li>
       </ul>
     </div>
@@ -87,7 +112,7 @@
 </header>
 
 <br>
-<div class="ra">
+<div class="ra" id="projects">
   <div class="columns service">
     <h1 class="heading">My services</h1>
     <div class="wrapper">
@@ -120,7 +145,7 @@
 </div>
 
 
-<div class="conte">
+<div class="conte" id="work">
       <div class="testimonial mySwiper">
    	 <div class="testi-content swiper-wrapper">
        	  <div class="slide swiper-slide">
@@ -385,6 +410,11 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
     <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
         ({key: "AIzaSyC4NSzPD5vlXt2ax6BRB1NwJAYIHSNDuQY", v: "weekly"});</script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

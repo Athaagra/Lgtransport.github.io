@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body {
+            font-family: questa-sans;
+            //color: #555;
+}
+        
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: Terminal-test;
+    //font-weight: normal;
+    //color: #333;
+ }
 
 .slider-background {
  overflow: hidden;
@@ -155,7 +176,7 @@
   margin-bottom: 20px;
 }
 .client-comments p {
-  font-family: questa-sans, sans-serif;
+  font-family: questa-sans;
   font-size: 0.9rem;
   color: #4b4b4b;
 }
