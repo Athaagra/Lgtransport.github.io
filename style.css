@@ -3,6 +3,34 @@ body {
             font-family: questa-sans;
             //color: #555;
 }
+
+.top-bar, .top-bar ul {
+    background-color: #ffffff; 
+}
+
+.info h1 {
+    margin-bottom: 32px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.info p {
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 0;
+    font-family: questa-sans, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.menu li a {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
         
 h1,
 .h1,
@@ -40,27 +68,27 @@ h6,
 }
  
 .slider-background .slide-background:nth-child(1) {
-   background-image: url('https://images.unsplash.com/photo-1595356700395-6f14b5c1f33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+   background-image: url('https://plus.unsplash.com/premium_photo-1661879449050-069f67e200bd?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
    animation-delay: 0s;
 }
 
 .slider-background .slide-background:nth-child(2) {
-   background-image: url('https://images.unsplash.com/photo-1591019052241-e4d95a5dc3fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+   background-image: url('https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
    animation-delay: -2.5s;
 }
 
 .slider-background .slide-background:nth-child(3) {
-   background-image: url('https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+   background-image: url('https://images.unsplash.com/photo-1614976523626-d598aafd4fda?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
    animation-delay: -5s;
 }
 
 .slider-background .slide-background:nth-child(4) {
-   background-image: url('https://images.unsplash.com/photo-1517430554953-a5ba4678fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+   background-image: url('https://images.unsplash.com/photo-1532330384785-f94c84352e91?q=80&w=2011&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
    animation-delay: -7.5s;
 }
 
 .slider-background .slide-background:nth-child(5) {
-   background-image: url('https://images.unsplash.com/photo-1583161178154-c362b3459d29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+   background-image: url('https://unsplash.com/photos/white-and-black-truck-near-mountain-at-daytime-lq9PxpwDZUk');
    animation-delay: -10s;
 }
 
@@ -98,6 +126,7 @@ h6,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 .comments-heading h1{
@@ -106,7 +135,8 @@ h6,
   font-weight: 500;
   background-color: #202020;
   color: #ffffff;
-  padding: 10px 20px; 
+  padding: 10px 20px;
+  font-weight: 700; 
 }
 
 .comments-heading span{
@@ -116,6 +146,12 @@ h6,
   margin-bottom: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: termina, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
 }
 .comments-box-container{
   display: flex;
@@ -163,7 +199,9 @@ h6,
 }
 .name-user span{
    color: #979797;
-   font-size: 0.8rem;
+   font-style: italic;
+   font-weight: 700;
+   line-height: 24px;
 }
 
 .reviews{
@@ -179,6 +217,10 @@ h6,
   font-family: questa-sans;
   font-size: 0.9rem;
   color: #4b4b4b;
+  letter-spacing: normal;
+  font-family: questa-sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .comments-box:hover{
   transform: translateY(-10px);
@@ -232,7 +274,7 @@ h6,
 
 .top-bar-left > .menu > li > a:hover {
   padding: 10px 12px;
-  border: 1px solid green;
+  border: 1px solid #062949;
 }
 
 .top-bar-left ul.menu {
@@ -243,14 +285,15 @@ h6,
 
 
 .parallax {
-   background: url("imageim.jpg");
+   background: url("advantage.jpg");
    background-position: center center;
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-size: cover;
 }
 .parallax-inner {
-   padding-top: 10%;
+   padding-top: 40%;
+   margin-top:20%;
    padding-bottom: 10%;
 }
 
@@ -266,6 +309,22 @@ h1 {
   width: 50%;
   text-align: center;
 }
+.centered h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 42px;
+}
+
+.centered p {
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 27px;
+
+}
+
 
 div#google-map{
   border: 1px solid #ccc;
@@ -328,7 +387,8 @@ i.fi-social-tumblr {
    position:absolute;
    width: 55%;
    height: 44%;  
-   background-color: rgba(255, 99, 71, 255);
+   //background-color: rgba(255, 99, 71, 255);
+   background-color:#062949;
    left: 40%;
    margin-top:-12%;
    border-top: 5px solid coral;
@@ -347,8 +407,8 @@ i.fi-social-tumblr {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e3f2fd;
-
+  background-color: #ffffff;
+  margin-top: 20%;
 }
 
 .testimonial {
@@ -412,14 +472,15 @@ i.fi-social-tumblr {
   background-Color: #252121;
   display:flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 150px;
   width 40px;
   //margin: 10rem auto 0 auto;
-  margin:0.1rem auto 0 auto;
+  //margin:0.1rem auto 0 auto;
 }
 
 .section img{
-  height: 250px;
+  height: 650px;
+  width: 750px;
 }
 
 .section h1{
@@ -440,10 +501,9 @@ i.fi-social-tumblr {
   justify-content: center;
   min-height: 80vh;
   padding: 20px 9%;
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #333, #000000);
   color: #333;
   text-align: center;
-  margin-top: 6%;
 }
 
 .service .heading {
