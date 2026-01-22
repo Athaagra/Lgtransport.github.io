@@ -55,7 +55,257 @@ h6,
  height: 100vh;
  position: relative;
 }
+
+.heading-list {
+  margin-bottom: 20px;
+  color: #38465e;
+  font-family: termina, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.heading-resources{
+  color: #7988a2;
+  font-family: questa-sans, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.p-resources{
+  color: var(--black);
+  margin-bottom: 0;
+  text-align:center;
+  line-height: 24px;
+  position: relative;
+  left: 0;
+}
+
+.button-resources{
+  background-color: #38465e;;
+  color: var(--white);
+  white-space: break-spaces;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  margin-bottom: 17px;
+  margin-left: 9px;
+  margin-right: 9px;
+  padding: 14px 30px 14px 27px;
+  font-size: 16px;
+  font-weight: 600;
+  
+
+}
+
+.multibutton{
+  justify-content: center;
+  max-width: none;
+  align-items: center;
+  display: flex;
+
+}
+
+.text-list{
+  font-family: questa-sans, sans-serif;
+  font-size: 16px;
+  padding-right:20%;
+}
+
+.lists{
+  color: #7988a2;
+  font-family: questa-sans, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+}
  
+.slide-background-about {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-size: cover;
+ background-position: center;
+ background-color: #062949;
+ //animation: slider-background 12.5s infinite;
+}
+
+.title-about {
+  padding-top:15%;
+}
+.title-about span{
+  border-top: 5px solid coral;
+}
+
+
+.title-logistics {
+  padding-top:15%;
+  text-align:left;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.title-logistics span{
+  border-top: 5px solid coral;
+}
+.title-logistics p{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.plogistics{
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align:left;
+  font-size:16px;
+  line-height: 24px;
+  font-family: questa-sans;
+  color: #FFF;
+}
+
+.top-div-logistics{
+   position:absolute;
+   height: 44%;  
+   left: 34%;
+   margin-top:-20%;
+   
+}
+
+.side-bar{
+  background:#1b1a1b;
+  width: 250px;
+  left: -250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+}
+header{
+ background:#33363a;
+}
+
+.close-btn{
+ position: absolute;
+ color:#fff;
+ font-size: 23px;
+ right: 0px;
+ margin: 15x;
+ cursor: pointer;
+}
+
+
+.menu-container{
+ width: 50%;
+ margin-top: 30px;
+}
+
+.menu-container .item{
+ position: relative;
+ cursor: pointer;
+}
+
+.menu-container .item a{
+ color:#333;
+ font-size: 16px;
+ text-decoration: none;
+ display: block;
+ padding: 5px 30px;
+ line-height: 60px;
+}
+
+.item i{
+ margin-right: 15px;
+}
+
+.item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 20px;
+ transition: 0.3s ease;
+}
+
+.item .sub-menu{
+ background: #262627;
+ display:none;
+ 
+}
+
+.menu-btn{
+ position: absolute;
+ color: rgb(0,0,0);
+ font-size: 35px;
+ cursor: pointer;
+ margin: 25px;
+}
+
+.side-bar.active{
+  left:0;
+}
+.side-bar::-webkit-scrollbar{
+  width:0px;
+}
+.item .sub-menu a{
+  padding-left: 80px;
+}
+
+.rotate{
+  transform: rotate(90deg);
+}
+
+.text-container-two h1{
+  color:#333;
+}
+
+.section-logistics-services{
+  display:flex;
+  justify-content: space-between;
+  margin-top:15%;
+}
+.text-logistics-services-c{
+  color: #38465e;
+  font-family: termina, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+
+}
+
+
+.text-logistics{
+  color:#333;
+  width:110%;
+  
+}
+
+.text-logistics-d{
+  padding-left:5%;
+  color: #333;
+  font-family: questa-sans;
+  margin-bottom: 0;
+  line-height: 24px;
+  position: relative;
+}
+.text-logistics-c{
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  font-family: questa-sans;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  left: auto;
+}
+
+
+.slider-background {
+ overflow: hidden;
+ width: 100vw;
+ height: 100vh;
+ position: relative;
+}
+
+
 .slider-background .slide-background {
  position: absolute;
  top: 0;
@@ -273,11 +523,12 @@ h6,
 }
 
 .top-bar-left > .menu > li > a:hover {
-  padding: 10px 12px;
+  //padding: 10px 12px;
   border: 1px solid #062949;
 }
 
 .top-bar-left ul.menu {
+    padding: 10px 12px;
     padding-left: 50%;
 }
 
@@ -411,6 +662,17 @@ i.fi-social-tumblr {
   margin-top: 20%;
 }
 
+.conte-sidebar {
+  //height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
 .testimonial {
   position: relative;
   max-width: 90%;
@@ -467,6 +729,11 @@ i.fi-social-tumblr {
   background-color: rgba(0,0,0,0.8);
 }
 
+.empty-space{
+  width:14%;
+  background-color:#FFF;
+}
+
 
 .section{
   background-Color: #252121;
@@ -474,8 +741,30 @@ i.fi-social-tumblr {
   justify-content: space-between;
   padding: 150px;
   width 40px;
-  //margin: 10rem auto 0 auto;
-  //margin:0.1rem auto 0 auto;
+}
+
+.section-resources{
+  background-Color: #f5f7fa;
+  justify-content: space-between;
+  padding: 150px;
+  width 40px;
+}
+
+.section-list{
+  background-Color: #fff;
+  display:flex;
+  justify-content: space-between;
+  padding-top: 30%;
+  width 40px;
+}
+
+.section-logistics{
+  display:flex;
+  justify-content: space-between;
+  width 40px;
+  margin-top:40%;
+  background-color:#7988a2;
+  padding-left:12%;
 }
 
 .section img{
